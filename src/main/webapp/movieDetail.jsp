@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
+    <title>Movie Details</title>
     <link rel="stylesheet" href="styless.css">
 </head>
 <body>
@@ -93,26 +93,16 @@
 				</div>
 			</div>
 			<div>
-					<div class="card">
-			<div class="login-title">
-				<h3>Login to your account</h3>
-			</div>
 			<div>
 				<div class="input-style">
 					<div>
 						<h3>IOI Putrajaya</h3>
-					</div>
+						<p>18 October 2023<span style="display: block;">9.00pm</span></p>
+						<p style="font-size: 11px;">*Seat selection can be done after this</p>
 					<div>
-						<p>!8 October 2023</p>
-						<p>5.00 p.m</p>
-						<br>
-						<span>*Seat selection can be done after this</span>
+						<center><button id="proceed-btn">Proceed</button></center>
 					</div>
-					
-					<input type="button" id="login" value="Login">
 				</div>
-			</div>
-		</div>
 			</div>
 		</div>
 		
