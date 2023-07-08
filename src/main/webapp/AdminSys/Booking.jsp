@@ -152,7 +152,7 @@
 		<div id="layoutSidenav_content">
 			<main>
 				<div class="container-fluid px-4">
-					<h1 class="mt-4">Dashboard</h1>
+					<h1 class="mt-4">Booking</h1>
 					<ol class="breadcrumb mb-4">
 						<li class="breadcrumb-item active">
 							<!-- Dashboard -->
@@ -224,10 +224,10 @@
 							<table id="customers">
 								<tr>
 									<th>No.</th>
-									<th>Cover</th>
-									<th>Title</th>
-									<th>Status</th>
-									<th>Action</th>
+									<th>Name</th>
+									<th>Contact</th>
+									<th>Movie</th>
+									<th>Reservation Info</th>
 								</tr>
 								<tr>
 									<td>1</td>
