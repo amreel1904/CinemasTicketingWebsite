@@ -21,25 +21,11 @@ h2 {
 }
 
 .container{
-	
-	
 	margin: auto; 
 }
 
 .card{
   	background-color:#fff;
-  	border-radius: 10px;
-  	display: flex;
-	width: 100%;
-	padding: 20px;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-shrink: 0;
-}
-
-.card-register{
-	background-color:#fff;
   	border-radius: 10px;
   	display: flex;
 	width: 100%;

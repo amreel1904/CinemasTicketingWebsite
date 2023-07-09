@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container" style="margin: 0 0 0 50%;">
-		<div class="card" style="height: 100vh; border-radius: 0; width: 155%; padding: 20px;">
+	<div class="container" style="margin: 0 0 0 53%;">
+		<div class="card" style="height: 100vh; border-radius: 0; width: 155%; padding: 15px;">
 			<div class="login-title">
 				<h3>Create an account</h3>
 			</div>

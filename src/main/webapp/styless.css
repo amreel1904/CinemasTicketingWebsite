@@ -5,32 +5,39 @@ body {
 	margin: 0;
 	color: #fff;
 	background-image: url("bg_1.png");
-  	background-repeat:no-repeat;
-    background-size:cover;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 nav {
 	height: 50px;
 	width: 100%;
 	margin: 0;
-	padding-top: 12px;
+	padding-top: 30px;
 }
 
-ul{
+ul {
 	margin: 0;
 }
+
+.btn{
+	width: 150px;
+	justify-content: center;
+}
+
 li {
 	display: inline;
 }
-button{
+
+button {
 	cursor: pointer;
 }
 
- #logout-btn {
- 	display: flex;
+#logout-btn {
+	display: flex;
 	width: 100px;
 	padding: 10px 10px;
-	margin-right: 12px;
+	margin-right: 50px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
@@ -42,17 +49,17 @@ button{
 	font-style: normal;
 	font-weight: 500;
 	line-height: 100%;
-	
+
 }
 
 
 a {
- 	text-decoration: none;
-	
+	text-decoration: none;
+
 }
 
 section {
-	
+
 	padding: 30px 50px;
 	margin: 0;
 }
@@ -95,7 +102,7 @@ section {
 	color: #FFF;
 }
 
-.detail-day{
+.detail-day {
 	color: var(--text-primary, #101012);
 	font-family: Poppins;
 	font-size: 14px;
@@ -104,7 +111,7 @@ section {
 	color: #FFF;
 }
 
-.detail-gp{
+.detail-gp {
 	display: inline;
 }
 
@@ -138,10 +145,10 @@ section {
 .movie-details {
 	width: fit-content;
 	/* background-color: #ccc; */
-	display:inline-block;
+	display: inline-block;
 }
 
-#proceed-btn{
+#proceed-btn {
 	border-radius: 8px;
 	border: 0;
 	background: #1DE782;
@@ -153,4 +160,38 @@ section {
 	gap: 5px;
 	cursor: pointer;
 }
-	
+
+.payment-success {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.viewTicket-btn, .backHome-btn {
+	display: flex;
+	width: 300px;
+	padding: 16px 10px;
+	margin-bottom: 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 8px;
+	color: #F2E8E8;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.viewTicket-btn{
+	background: var(--primary, #1DE782);
+}
+
+.backHome-btn{
+	border: 1px solid var(--white, #FFF);
+	background-color: transparent;
+}
