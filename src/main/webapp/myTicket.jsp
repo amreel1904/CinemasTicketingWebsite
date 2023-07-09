@@ -157,7 +157,7 @@
 					</div>
 				</div>
 				<div class="download-ticket-button-container">
-					<button class="download-ticket-button">Download Ticket</button>
+					<button class="download-ticket-button deactivated">Download Ticket</button>
 				</div>
 			</div>
 			<div class="tab-item-container">
@@ -180,7 +180,7 @@
 					</div>
 				</div>
 				<div class="download-ticket-button-container">
-					<button class="download-ticket-button">Download Ticket</button>
+					<button class="download-ticket-button deactivated">Download Ticket</button>
 				</div>
 			</div>
 		</div>
