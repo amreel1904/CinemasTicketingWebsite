@@ -26,6 +26,10 @@
 	      </tr>
 	    </tbody> -->
 			</table>
+			<div class="clear-button-container">
+				<button class="seat-button clear-button" role="button">X</button>
+			</div>
+
 		</div>
 	</div>
 	<div class="footer-container">
@@ -39,7 +43,15 @@
 		</div>
 		<div class="button-container">
 			<button class="back-button">Back</button>
+			<form id="myForm" action="orderDetail.jsp" method="POST">
+				<!-- Buttons with values -->
+				<input type="hidden" id="selectedValue" name="selectedValue">
+
+				<!-- Submit button -->
+				
+			</form>
 			<button class="proceed-payment-button">Proceed Payment</button>
+			
 		</div>
 	</div>
 </body>

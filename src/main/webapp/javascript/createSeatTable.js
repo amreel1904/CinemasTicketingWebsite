@@ -2,17 +2,17 @@
  * 
  */
 document.addEventListener('DOMContentLoaded', function() {
-	let numberOfRow = 10;
-	let numberOfColumn = 7;
+	let numberOfRow = 7;
+	let numberOfColumn = 10;
 
 	let table = document.getElementById('seats-table');
 	let tbody = document.createElement('tbody');
 	let alphabet = 'A';
 	table.appendChild(tbody);
 	
-	for (let i = 1; i <= numberOfColumn; i++) {
+	for (let i = 1; i <= numberOfRow; i++) {
 		let row = tbody.insertRow();
-		for (let j = 1; j <= numberOfRow; j++) {
+		for (let j = 1; j <= numberOfColumn; j++) {
 			let cell = row.insertCell();
 			let button = document.createElement('button');
 			
