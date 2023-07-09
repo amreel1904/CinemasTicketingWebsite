@@ -17,33 +17,33 @@
 	<div class="movie-container">
 		<div class="movie-row">
 			<div class="movie">
-				<img class="movie-image" src="image/placeholder.jpg" />
+				<img class="movie-image" src="image/image 1.png" />
 				<p>Placeholder Text</p>
 			</div>
 			<div class="movie">
-				<img class="movie-image" src="image/placeholder.jpg" />
-				<p>Placeholder Text</p>
-			</div>
-		</div>
-		
-		<div class="movie-row">
-			<div class="movie">
-				<img class="movie-image" src="image/placeholder.jpg" />
-				<p>Placeholder Text</p>
-			</div>
-			<div class="movie">
-				<img class="movie-image" src="image/placeholder.jpg" />
+				<img class="movie-image" src="image/image 2.png" />
 				<p>Placeholder Text</p>
 			</div>
 		</div>
 		
 		<div class="movie-row">
 			<div class="movie">
-				<img class="movie-image" src="image/placeholder.jpg" />
+				<img class="movie-image" src="image/image 3.png" />
 				<p>Placeholder Text</p>
 			</div>
 			<div class="movie">
-				<img class="movie-image" src="image/placeholder.jpg" />
+				<img class="movie-image" src="image/image 4.png" />
+				<p>Placeholder Text</p>
+			</div>
+		</div>
+		
+		<div class="movie-row">
+			<div class="movie">
+				<img class="movie-image" src="image/image 5.png" />
+				<p>Placeholder Text</p>
+			</div>
+			<div class="movie">
+				<img class="movie-image" src="image/image 6.png" />
 				<p>Placeholder Text</p>
 			</div>
 		</div>
