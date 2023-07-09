@@ -111,4 +111,9 @@ html {
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+	border:none;
+	 cursor: pointer;
+}
+.download-ticket-button.deactivated{
+	background: var(--inactive, #A1D9BE);
 }
