@@ -16,6 +16,8 @@ body {
 }
 
 .order-detail-container {
+	margin-left:40px;
+	margin-right:40px;
 	display: flex;
 	width: 391px;
 	flex-direction: column;
