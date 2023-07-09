@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 html, body{
-  	background-image: url("bg_1.png");
+  	background-image: url("../img/bg_1.png");
   	background-repeat:no-repeat;
     background-size:cover;
   	display:flex;

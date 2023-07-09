@@ -169,6 +169,8 @@ section {
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
+	width: fit-content;
+	margin-top: 10%;
 }
 
 .viewTicket-btn, .backHome-btn {
@@ -196,8 +198,24 @@ section {
 .backHome-btn{
 	border: 1px solid var(--white, #FFF);
 	background-color: transparent;
+	margin-bottom: 50%;
 }
 
-.ticket-detail {
-	margin-top: 20px;
+.ticket-detail{
+	margin-top: 15%;
+}
+
+.ticket-info {
+	color: var(--white, #FFF);
+	font-family: Poppins;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px;
+	margin-top: 0;
+}
+
+.info-label{
+	font-size: 10px;
+	font-weight: 500;
 }
