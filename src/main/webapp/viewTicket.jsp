@@ -19,15 +19,15 @@
 		</nav>
 	</header>
     <main style="padding: 50px;">
-        <div>
+        <div style="margin-left: 50px;">
             <h2>Ticket Detail</h2>
         </div>
         <div class="ticket-detail">
             <div>
                 <div class="input-style">
-                    <div>
+                    <div style="padding-top: 10px; width: 100%;">
                         <div>
-                            <Span class="info-label" style="">Date</Span>
+                            <Span class="info-label">Date</Span>
                             <p class="ticket-info">Mon, 23 Oct 2023</p>
                         </div>
                         <div>
@@ -35,7 +35,7 @@
                             <p class="ticket-info" style="text-transform: uppercase;">spiderman no way home</p>
                         </div>
                         <div>
-                            <table>
+                            <table style="width: 100%;">
                                 <tr>
                                     <td><Span class="info-label">Ticket (3)</Span></td>
                                     <td><Span class="info-label" style="float: right;">Hours</Span></td>
@@ -47,7 +47,7 @@
                             </table>
                             
                         </div>
-                        <div>
+                        <div style="width: 100%;">
                             <center><input type="button" id="proceed-btn" value="Download Ticket"></center>
                         </div>
         
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="gp-btn">
-                <button class="backHome-btn" style="width: 200px; margin-top: 50px;">Back to Homepage</button>
+                <button class="backHome-btn" style="width: 250px; margin-top: 100px;">Back to Homepage</button>
             </div>
         </div>
     </main>
