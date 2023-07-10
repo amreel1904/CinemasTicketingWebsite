@@ -55,7 +55,8 @@
                 </div>
             </div>
             <div class="gp-btn">
-                <button class="backHome-btn" style="width: 250px; margin-top: 100px;">Back to Homepage</button>
+                <button class="backHome-btn" style="width: 250px; margin-top: 100px; padding: 20px 0;"
+                >Back to Homepage</button>
             </div>
         </div>
     </main>
