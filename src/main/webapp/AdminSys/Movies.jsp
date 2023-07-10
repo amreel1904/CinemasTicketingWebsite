@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="" />
-<meta name="author" content="" />
-<title>System Admin - Movie Ticket System</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
-	rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>System Admin - Movie Ticket System</title>
+	<link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 	<link href="css/styles.css" rel="stylesheet" />
-<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-	crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="sb-nav-fixed">
 	<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
 		<!-- Navbar Brand-->
@@ -30,8 +29,7 @@
 		<i class="fas fa-bars"></i>
 		</button>
 		<!-- Navbar Search-->
-		<form
-			class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+		<form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
 			<!-- <div class="input-group">
 				<input class="form-control" type="text" placeholder="Search for..."
 					aria-label="Search for..." aria-describedby="btnNavbarSearch" />
@@ -42,23 +40,20 @@
 		</form>
 		<!-- Navbar-->
 		<ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-			<li class="nav-item dropdown"><a
-				class="nav-link dropdown-toggle" id="navbarDropdown" href="#"
-				role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
-					class="fas fa-user fa-fw"></i></a>
-				<ul class="dropdown-menu dropdown-menu-end"
-					aria-labelledby="navbarDropdown">
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
 					<!-- <li><a class="dropdown-item" href="#!">Settings</a></li>
 					<li><a class="dropdown-item" href="#!">Activity Log</a></li>
 					<li><hr class="dropdown-divider" /></li> -->
 					<li><a class="dropdown-item" href="#!">Logout</a></li>
-				</ul></li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
 	<div id="layoutSidenav">
 		<div id="layoutSidenav_nav">
-			<nav class="sb-sidenav accordion sb-sidenav-dark"
-				id="sidenavAccordion">
+			<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
 						<div class="sb-sidenav-menu-heading">
@@ -71,8 +66,7 @@
 						</a>
 						<!--   <div class="sb-sidenav-menu-heading">Interface</div> -->
 						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-							data-bs-target="#collapseLayouts" aria-expanded="false"
-							aria-controls="collapseLayouts">
+							data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
 							<div class="sb-nav-link-icon">
 								<i class="fas fa-columns"></i>
 							</div> Theaters
@@ -80,17 +74,16 @@
 								<i class="fas fa-angle-down"></i>
 							</div>
 						</a>
-						<div class="collapse" id="collapseLayouts"
-							aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+						<div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+							data-bs-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
 								<a class="nav-link" href="layout-static.html">Static
 									Navigation</a> <a class="nav-link" href="layout-sidenav-light.html">Light
 									Sidenav</a>
 							</nav>
 						</div>
-						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-							data-bs-target="#collapsePages" aria-expanded="false"
-							aria-controls="collapsePages">
+						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+							aria-expanded="false" aria-controls="collapsePages">
 							<div class="sb-nav-link-icon">
 								<i class="fas fa-book-open"></i>
 							</div> Users
@@ -98,10 +91,9 @@
 								<i class="fas fa-angle-down"></i>
 							</div>
 						</a>
-						<div class="collapse" id="collapsePages"
-							aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-							<nav class="sb-sidenav-menu-nested nav accordion"
-								id="sidenavAccordionPages">
+						<div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+							data-bs-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
 								<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
 									data-bs-target="#pagesCollapseAuth" aria-expanded="false"
 									aria-controls="pagesCollapseAuth"> Authentication
@@ -109,13 +101,12 @@
 										<i class="fas fa-angle-down"></i>
 									</div>
 								</a>
-								<div class="collapse" id="pagesCollapseAuth"
-									aria-labelledby="headingOne"
+								<div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
 									data-bs-parent="#sidenavAccordionPages">
 									<nav class="sb-sidenav-menu-nested nav">
-										<a class="nav-link" href="login.html">Login</a> <a
-											class="nav-link" href="register.html">Register</a> <a
-											class="nav-link" href="password.html">Forgot Password</a>
+										<a class="nav-link" href="login.html">Login</a> <a class="nav-link"
+											href="register.html">Register</a> <a class="nav-link"
+											href="password.html">Forgot Password</a>
 									</nav>
 								</div>
 								<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
@@ -125,13 +116,12 @@
 										<i class="fas fa-angle-down"></i>
 									</div>
 								</a>
-								<div class="collapse" id="pagesCollapseError"
-									aria-labelledby="headingOne"
+								<div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne"
 									data-bs-parent="#sidenavAccordionPages">
 									<nav class="sb-sidenav-menu-nested nav">
-										<a class="nav-link" href="401.html">401 Page</a> <a
-											class="nav-link" href="404.html">404 Page</a> <a
-											class="nav-link" href="500.html">500 Page</a>
+										<a class="nav-link" href="401.html">401 Page</a> <a class="nav-link"
+											href="404.html">404 Page</a> <a class="nav-link" href="500.html">500
+											Page</a>
 									</nav>
 								</div>
 							</nav>
@@ -227,13 +217,12 @@
 								<i class="fas fa-table me-1"></i> Movies Details
 							</div>
 							<div class="col-2 justify-content-end">
-								<button class="btn btn-block btn-sm btn-primary" type="button"
-									id="new_movie">
+								<button class="btn btn-block btn-sm btn-primary" type="button" id="new_movie">
 									<i class="fa fa-plus"></i> New Movie
 								</button>
 							</div>
 						</div>
-						
+
 						<div class="card-body">
 							<table id="customers">
 								<tr>
@@ -250,17 +239,18 @@
 									<td>Active</td>
 									<td>
 										<center>
-										<div class="btn-group">
-											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Action
-											</button>
-											<div class="dropdown-menu">
-											  <a class="dropdown-item" href="#">Edit</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Remove</a>
-											</div>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
 										</center>
-										
+
 										<!-- <div class="btn-group">
 										  <button type="button" class="btn btn-primary btn-sm">Action</button>
 										  <button type="button" class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -272,160 +262,187 @@
 											<a class="dropdown-item" href="#">Something else here</a>
 										  </div>
 										</div> -->
-										</td>
+									</td>
 								</tr>
 								<tr>
 									<td>2</td>
 									<td>Christina Berglund</td>
 									<td>Sweden</td>
 									<td>Active</td>
-									<td><center>
-										<div class="btn-group">
-											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Action
-											</button>
-											<div class="dropdown-menu">
-											  <a class="dropdown-item" href="#">Edit</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Remove</a>
-											</div>
-										</center></td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>3</td>
 									<td>Francisco Chang</td>
 									<td>Mexico</td>
 									<td>Active</td>
-									<td><center>
-										<div class="btn-group">
-											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Action
-											</button>
-											<div class="dropdown-menu">
-											  <a class="dropdown-item" href="#">Edit</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Remove</a>
-											</div>
-										</center></td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>4</td>
 									<td>Roland Mendel</td>
 									<td>Austria</td>
 									<td>Active</td>
-									<td><center>
-										<div class="btn-group">
-											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Action
-											</button>
-											<div class="dropdown-menu">
-											  <a class="dropdown-item" href="#">Edit</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Remove</a>
-											</div>
-										</center></td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>5</td>
 									<td>Helen Bennett</td>
 									<td>UK</td>
 									<td>Active</td>
-									<td><center>
-										<div class="btn-group">
-											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Action
-											</button>
-											<div class="dropdown-menu">
-											  <a class="dropdown-item" href="#">Edit</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Remove</a>
-											</div>
-										</center></td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>6</td>
 									<td>Philip Cramer</td>
 									<td>Germany</td>
 									<td>Active</td>
-									<td><center>
-										<div class="btn-group">
-											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Action
-											</button>
-											<div class="dropdown-menu">
-											  <a class="dropdown-item" href="#">Edit</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Remove</a>
-											</div>
-										</center></td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>7</td>
 									<td>Yoshi Tannamuri</td>
 									<td>Canada</td>
 									<td>Active</td>
-									<td><center>
-										<div class="btn-group">
-											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Action
-											</button>
-											<div class="dropdown-menu">
-											  <a class="dropdown-item" href="#">Edit</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Remove</a>
-											</div>
-										</center></td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>8</td>
 									<td>Giovanni Rovelli</td>
 									<td>Italy</td>
 									<td>Active</td>
-									<td><center>
-										<div class="btn-group">
-											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Action
-											</button>
-											<div class="dropdown-menu">
-											  <a class="dropdown-item" href="#">Edit</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Remove</a>
-											</div>
-										</center></td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>9</td>
 									<td>Simon Crowther</td>
 									<td>UK</td>
 									<td>Active</td>
-									<td><center>
-										<div class="btn-group">
-											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Action
-											</button>
-											<div class="dropdown-menu">
-											  <a class="dropdown-item" href="#">Edit</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Remove</a>
-											</div>
-										</center></td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>10</td>
 									<td>Marie Bertrand</td>
 									<td>France</td>
 									<td>Active</td>
-									<td><center>
-										<div class="btn-group">
-											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Action
-											</button>
-											<div class="dropdown-menu">
-											  <a class="dropdown-item" href="#">Edit</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Remove</a>
-											</div>
-										</center></td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 							</table>
 						</div>
@@ -434,8 +451,7 @@
 			</main>
 			<footer class="py-4 bg-light mt-auto">
 				<div class="container-fluid px-4">
-					<div
-						class="d-flex align-items-center justify-content-between small">
+					<div class="d-flex align-items-center justify-content-between small">
 						<div class="text-muted">Copyright &copy; Your Website 2023</div>
 						<div>
 							<a href="#">Privacy Policy</a> &middot; <a href="#">Terms
@@ -446,51 +462,48 @@
 			</footer>
 		</div>
 	</div>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 		crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
-		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
 	<script src="assets/demo/chart-area-demo.js"></script>
 	<script src="assets/demo/chart-bar-demo.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
 		crossorigin="anonymous"></script>
 	<script src="js/datatables-simple-demo.js"></script>
-	
-	
-	
-	
-	
-	<script>$('#new_movie').click(function(){
-		uni_modal('New Movie','ManageMovies.jsp');
-	})
-	$('.edit_movie').click(function(){
-		uni_modal('Edit Movie','manage_movie.php?id='+$(this).attr('data-id'));
-	})
-	$('.delete_movie').click(function(){
-		_conf('Are you sure to delete this data?','delete_movie' , [$(this).attr('data-id')])
-	})
 
-	function delete_movie($id=''){
-		start_load()
-		$.ajax({
-			url:'ajax.php?action=delete_movie',
-			method:'POST',
-			data:{id:$id},
-			success:function(resp){
-				if(resp ==1){
-					alert_toast("Data successfully deleted",'success');
-					setTimeout(function(){
-						location.reload()
-					},1500)
-				}
-			}
+
+
+
+
+	<script>$('#new_movie').click(function () {
+			uni_modal('New Movie', 'ManageMovies.jsp');
 		})
-	}</script>
+		$('.edit_movie').click(function () {
+			uni_modal('Edit Movie', 'manage_movie.php?id=' + $(this).attr('data-id'));
+		})
+		$('.delete_movie').click(function () {
+			_conf('Are you sure to delete this data?', 'delete_movie', [$(this).attr('data-id')])
+		})
+
+		function delete_movie($id = '') {
+			start_load()
+			$.ajax({
+				url: 'ajax.php?action=delete_movie',
+				method: 'POST',
+				data: { id: $id },
+				success: function (resp) {
+					if (resp == 1) {
+						alert_toast("Data successfully deleted", 'success');
+						setTimeout(function () {
+							location.reload()
+						}, 1500)
+					}
+				}
+			})
+		}</script>
 
 
 </body>
+
 </html>
