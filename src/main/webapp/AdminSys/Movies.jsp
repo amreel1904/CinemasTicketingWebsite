@@ -11,7 +11,12 @@
 <link
 	href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
 	rel="stylesheet" />
-<link href="css/styles.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+	<link href="css/styles.css" rel="stylesheet" />
 <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
 	crossorigin="anonymous"></script>
 </head>
@@ -27,13 +32,13 @@
 		<!-- Navbar Search-->
 		<form
 			class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-			<div class="input-group">
+			<!-- <div class="input-group">
 				<input class="form-control" type="text" placeholder="Search for..."
 					aria-label="Search for..." aria-describedby="btnNavbarSearch" />
 				<button class="btn btn-primary" id="btnNavbarSearch" type="button">
 					<i class="fas fa-search"></i>
 				</button>
-			</div>
+			</div> -->
 		</form>
 		<!-- Navbar-->
 		<ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
@@ -43,9 +48,9 @@
 					class="fas fa-user fa-fw"></i></a>
 				<ul class="dropdown-menu dropdown-menu-end"
 					aria-labelledby="navbarDropdown">
-					<li><a class="dropdown-item" href="#!">Settings</a></li>
+					<!-- <li><a class="dropdown-item" href="#!">Settings</a></li>
 					<li><a class="dropdown-item" href="#!">Activity Log</a></li>
-					<li><hr class="dropdown-divider" /></li>
+					<li><hr class="dropdown-divider" /></li> -->
 					<li><a class="dropdown-item" href="#!">Logout</a></li>
 				</ul></li>
 		</ul>
@@ -221,14 +226,14 @@
 							<div class="col-8 ">
 								<i class="fas fa-table me-1"></i> Movies Details
 							</div>
-							<div class="col-4 justify-content-end">
+							<div class="col-2 justify-content-end">
 								<button class="btn btn-block btn-sm btn-primary" type="button"
 									id="new_movie">
 									<i class="fa fa-plus"></i> New Movie
 								</button>
 							</div>
 						</div>
-
+						
 						<div class="card-body">
 							<table id="customers">
 								<tr>
@@ -243,70 +248,184 @@
 									<td>Maria Anders</td>
 									<td>Germany</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Action
+											</button>
+											<div class="dropdown-menu">
+											  <a class="dropdown-item" href="#">Edit</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Remove</a>
+											</div>
+										</center>
+										
+										<!-- <div class="btn-group">
+										  <button type="button" class="btn btn-primary btn-sm">Action</button>
+										  <button type="button" class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span class="sr-only">Toggle Dropdown</span>
+										  </button>
+										  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										  </div>
+										</div> -->
+										</td>
 								</tr>
 								<tr>
 									<td>2</td>
 									<td>Christina Berglund</td>
 									<td>Sweden</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td><center>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Action
+											</button>
+											<div class="dropdown-menu">
+											  <a class="dropdown-item" href="#">Edit</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Remove</a>
+											</div>
+										</center></td>
 								</tr>
 								<tr>
 									<td>3</td>
 									<td>Francisco Chang</td>
 									<td>Mexico</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td><center>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Action
+											</button>
+											<div class="dropdown-menu">
+											  <a class="dropdown-item" href="#">Edit</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Remove</a>
+											</div>
+										</center></td>
 								</tr>
 								<tr>
 									<td>4</td>
 									<td>Roland Mendel</td>
 									<td>Austria</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td><center>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Action
+											</button>
+											<div class="dropdown-menu">
+											  <a class="dropdown-item" href="#">Edit</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Remove</a>
+											</div>
+										</center></td>
 								</tr>
 								<tr>
 									<td>5</td>
 									<td>Helen Bennett</td>
 									<td>UK</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td><center>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Action
+											</button>
+											<div class="dropdown-menu">
+											  <a class="dropdown-item" href="#">Edit</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Remove</a>
+											</div>
+										</center></td>
 								</tr>
 								<tr>
 									<td>6</td>
 									<td>Philip Cramer</td>
 									<td>Germany</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td><center>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Action
+											</button>
+											<div class="dropdown-menu">
+											  <a class="dropdown-item" href="#">Edit</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Remove</a>
+											</div>
+										</center></td>
 								</tr>
 								<tr>
 									<td>7</td>
 									<td>Yoshi Tannamuri</td>
 									<td>Canada</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td><center>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Action
+											</button>
+											<div class="dropdown-menu">
+											  <a class="dropdown-item" href="#">Edit</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Remove</a>
+											</div>
+										</center></td>
 								</tr>
 								<tr>
 									<td>8</td>
 									<td>Giovanni Rovelli</td>
 									<td>Italy</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td><center>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Action
+											</button>
+											<div class="dropdown-menu">
+											  <a class="dropdown-item" href="#">Edit</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Remove</a>
+											</div>
+										</center></td>
 								</tr>
 								<tr>
 									<td>9</td>
 									<td>Simon Crowther</td>
 									<td>UK</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td><center>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Action
+											</button>
+											<div class="dropdown-menu">
+											  <a class="dropdown-item" href="#">Edit</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Remove</a>
+											</div>
+										</center></td>
 								</tr>
 								<tr>
 									<td>10</td>
 									<td>Marie Bertrand</td>
 									<td>France</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td><center>
+										<div class="btn-group">
+											<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Action
+											</button>
+											<div class="dropdown-menu">
+											  <a class="dropdown-item" href="#">Edit</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Remove</a>
+											</div>
+										</center></td>
 								</tr>
 							</table>
 						</div>

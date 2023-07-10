@@ -218,87 +218,47 @@
                         </div> -->
 					<div class="card mb-4">
 						<div class="card-header">
-							<i class="fas fa-table me-1"></i> Movies Details
+							<i class="fas fa-table me-1"></i> Customer Details
 						</div>
 						<div class="card-body">
 							<table id="customers">
 								<tr>
 									<th>No.</th>
-									<th>Cover</th>
-									<th>Title</th>
-									<th>Status</th>
+									<th>Customer Detail</th>
 									<th>Action</th>
+									
 								</tr>
 								<tr>
 									<td>1</td>
 									<td>Maria Anders</td>
 									<td>Germany</td>
-									<td>Active</td>
-									<td>Germany</td>
+									
 								</tr>
 								<tr>
 									<td>2</td>
 									<td>Christina Berglund</td>
 									<td>Sweden</td>
-									<td>Active</td>
-									<td>Germany</td>
+									
 								</tr>
 								<tr>
 									<td>3</td>
 									<td>Francisco Chang</td>
 									<td>Mexico</td>
-									<td>Active</td>
-									<td>Germany</td>
+									
 								</tr>
 								<tr>
 									<td>4</td>
 									<td>Roland Mendel</td>
 									<td>Austria</td>
-									<td>Active</td>
-									<td>Germany</td>
+									
 								</tr>
 								<tr>
 									<td>5</td>
 									<td>Helen Bennett</td>
 									<td>UK</td>
-									<td>Active</td>
-									<td>Germany</td>
+									
 								</tr>
-								<tr>
-									<td>6</td>
-									<td>Philip Cramer</td>
-									<td>Germany</td>
-									<td>Active</td>
-									<td>Germany</td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>Yoshi Tannamuri</td>
-									<td>Canada</td>
-									<td>Active</td>
-									<td>Germany</td>
-								</tr>
-								<tr>
-									<td>8</td>
-									<td>Giovanni Rovelli</td>
-									<td>Italy</td>
-									<td>Active</td>
-									<td>Germany</td>
-								</tr>
-								<tr>
-									<td>9</td>
-									<td>Simon Crowther</td>
-									<td>UK</td>
-									<td>Active</td>
-									<td>Germany</td>
-								</tr>
-								<tr>
-									<td>10</td>
-									<td>Marie Bertrand</td>
-									<td>France</td>
-									<td>Active</td>
-									<td>Germany</td>
-								</tr>
+							
 							</table>
 						</div>
 					</div>
