@@ -4,7 +4,7 @@ body {
 	font-family: Poppins;
 	margin: 0;
 	color: #fff;
-	background-image: url("bg_1.png");
+	background-image: url("../img/bg_1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -202,7 +202,7 @@ section {
 }
 
 .ticket-detail{
-	margin-top: 15%;
+	margin-top: 17%;
 }
 
 .ticket-info {
