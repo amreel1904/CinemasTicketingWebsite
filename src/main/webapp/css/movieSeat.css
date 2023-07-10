@@ -1,0 +1,171 @@
+@charset "ISO-8859-1";
+
+html {
+	background-image: url("../image/backUI1.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.title-movie-seat-page {
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.container {
+	flex: 2;
+}
+
+.table-container {
+	display: inline-block;
+}
+
+td {
+	padding: 6px 6px 6px 6px;
+	text-align: center;
+}
+
+.center-table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.seat-button {
+	width: 40px;
+	height: 36px;
+	align-items: center;
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: .25rem;
+	box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+	box-sizing: border-box;
+	color: rgba(0, 0, 0, 0.85);
+	cursor: pointer;
+	display: inline-flex;
+	font-family: system-ui, -apple-system, system-ui, "Helvetica Neue",
+		Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	justify-content: center;
+	line-height: 1.25;
+	margin: 0;
+	min-height: 3rem;
+	padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+	position: relative;
+	text-decoration: none;
+	transition: all 250ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: baseline;
+}
+.clear-button-container {
+	width: 100%;
+  	height: 100%;
+  	display: flex;
+  	justify-content: center;
+}
+
+.clear-button {
+	width: 97%;
+	padding: 6px 6px 6px 6px;
+	margin-top: 16px;
+	border-radius: 16px;
+}
+
+.seat-button:hover, .seat-button:focus {
+	border-color: rgba(0, 0, 0, 0.15);
+	box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+	color: rgba(0, 0, 0, 0.65);
+}
+
+.seat-button:hover {
+	transform: translateY(-1px);
+}
+
+.seat-button:active {
+	background-color: #F0F0F1;
+	border-color: rgba(0, 0, 0, 0.15);
+	box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+	color: rgba(0, 0, 0, 0.65);
+	transform: translateY(0);
+}
+
+.footer-container {
+	margin-top: 44px;
+	display: flex;
+	width: 100%;
+	height: 100px;
+	/* padding: 0px 72px; */
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	flex-shrink: 0;
+	border-top: 1px solid white;
+}
+
+.detail-container {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 5px;
+}
+
+.detail {
+	color: white;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.detail-title {
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.button-container {
+	display: flex;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+.back-button {
+	border-radius: 8px;
+	padding: 16px 10px;
+	border: 1px solid var(--white, #FFF);
+	background: rgba(0, 0, 0, 0.1);
+	color: var(--white, #FFF);
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	cursor: pointer;
+}
+
+.proceed-payment-button {
+	border-radius: 8px;
+	padding: 16px 10px;
+	background: var(--primary, #1DE782);
+	color: var(--white, #FFF);
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	cursor: pointer;
+}

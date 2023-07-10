@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,6 +19,7 @@
 	<link href="css/styles.css" rel="stylesheet" />
 	<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
+
 
 <body class="sb-nav-fixed">
 	<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -49,10 +51,13 @@
 					<li><a class="dropdown-item" href="#!">Logout</a></li>
 				</ul>
 			</li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
 	<div id="layoutSidenav">
 		<div id="layoutSidenav_nav">
+			<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
 			<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
@@ -67,6 +72,7 @@
 						<!--   <div class="sb-sidenav-menu-heading">Interface</div> -->
 						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
 							data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+							data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
 							<div class="sb-nav-link-icon">
 								<i class="fas fa-columns"></i>
 							</div> Theaters
@@ -76,12 +82,16 @@
 						</a>
 						<div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
 							data-bs-parent="#sidenavAccordion">
+						<div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+							data-bs-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
 								<a class="nav-link" href="layout-static.html">Static
 									Navigation</a> <a class="nav-link" href="layout-sidenav-light.html">Light
 									Sidenav</a>
 							</nav>
 						</div>
+						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+							aria-expanded="false" aria-controls="collapsePages">
 						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
 							aria-expanded="false" aria-controls="collapsePages">
 							<div class="sb-nav-link-icon">
@@ -216,8 +226,9 @@
 							<div class="col-8 ">
 								<i class="fas fa-table me-1"></i> Movies Details
 							</div>
-							<div class="col-2 justify-content-end">
-								<button class="btn btn-block btn-sm btn-primary" type="button" id="new_movie">
+							<div class="col-4 justify-content-end">
+								<button class="btn btn-block btn-sm btn-primary" type="button"
+									id="new_movie">
 									<i class="fa fa-plus"></i> New Movie
 								</button>
 							</div>
@@ -462,7 +473,8 @@
 			</footer>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 		crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
@@ -471,37 +483,37 @@
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
 		crossorigin="anonymous"></script>
 	<script src="js/datatables-simple-demo.js"></script>
+	
+	
+	
+	
+	
+	<script>$('#new_movie').click(function(){
+		uni_modal('New Movie','ManageMovies.jsp');
+	})
+	$('.edit_movie').click(function(){
+		uni_modal('Edit Movie','manage_movie.php?id='+$(this).attr('data-id'));
+	})
+	$('.delete_movie').click(function(){
+		_conf('Are you sure to delete this data?','delete_movie' , [$(this).attr('data-id')])
+	})
 
-
-
-
-
-	<script>$('#new_movie').click(function () {
-			uni_modal('New Movie', 'ManageMovies.jsp');
-		})
-		$('.edit_movie').click(function () {
-			uni_modal('Edit Movie', 'manage_movie.php?id=' + $(this).attr('data-id'));
-		})
-		$('.delete_movie').click(function () {
-			_conf('Are you sure to delete this data?', 'delete_movie', [$(this).attr('data-id')])
-		})
-
-		function delete_movie($id = '') {
-			start_load()
-			$.ajax({
-				url: 'ajax.php?action=delete_movie',
-				method: 'POST',
-				data: { id: $id },
-				success: function (resp) {
-					if (resp == 1) {
-						alert_toast("Data successfully deleted", 'success');
-						setTimeout(function () {
-							location.reload()
-						}, 1500)
-					}
+	function delete_movie($id=''){
+		start_load()
+		$.ajax({
+			url:'ajax.php?action=delete_movie',
+			method:'POST',
+			data:{id:$id},
+			success:function(resp){
+				if(resp ==1){
+					alert_toast("Data successfully deleted",'success');
+					setTimeout(function(){
+						location.reload()
+					},1500)
 				}
-			})
-		}</script>
+			}
+		})
+	}</script>
 
 
 </body>
