@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.Ateh.Beans.User;
-import com.Ateh.Model.User_db;
+import com.Ateh.Model.UserDB;
 
 /**
  * Servlet implementation class Register
@@ -45,12 +45,13 @@ public class Register extends HttpServlet {
 		String password = request.getParameter("password");
 		
 		User rb = new User();
-		
+		System.out.println(rb);
 		rb.setName(name);
 		rb.setEmail(email);
 		rb.setPassword(password);
 		
-		User_db ud = new User_db();
+		UserDB ud = new UserDB();
+		System.out.println(ud);
 		String s1 = ud.insertUser(rb);
 		
 		System.out.println(s1);

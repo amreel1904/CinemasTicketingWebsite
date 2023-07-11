@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import com.Ateh.Beans.User;
 
-public class User_db {
+public class UserDB {
 	String s1 = null;
 
 	public String insertUser(User rb) {
