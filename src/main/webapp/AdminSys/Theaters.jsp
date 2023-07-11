@@ -176,35 +176,100 @@
 									<td>Maria Anders</td>
 									<td>Germany</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>2</td>
 									<td>Christina Berglund</td>
 									<td>Sweden</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>3</td>
 									<td>Francisco Chang</td>
 									<td>Mexico</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>4</td>
 									<td>Roland Mendel</td>
 									<td>Austria</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>5</td>
 									<td>Helen Bennett</td>
 									<td>UK</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 
 							</table>
@@ -236,35 +301,100 @@
 									<td>Maria Anders</td>
 									<td>Germany</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>2</td>
 									<td>Christina Berglund</td>
 									<td>Sweden</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>3</td>
 									<td>Francisco Chang</td>
 									<td>Mexico</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>4</td>
 									<td>Roland Mendel</td>
 									<td>Austria</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 								<tr>
 									<td>5</td>
 									<td>Helen Bennett</td>
 									<td>UK</td>
 									<td>Active</td>
-									<td>Germany</td>
+									<td>
+										<center>
+											<div class="btn-group">
+												<button type="button" class="btn btn-primary dropdown-toggle"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Action
+												</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Edit</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Remove</a>
+												</div>
+										</center>
+									</td>
 								</tr>
 
 							</table>

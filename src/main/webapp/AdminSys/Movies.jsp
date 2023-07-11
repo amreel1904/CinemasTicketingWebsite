@@ -18,6 +18,57 @@
 
 	<link href="css/styles.css" rel="stylesheet" />
 	<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+	<style>
+        .overlay {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-form {
+            width: 50%;
+            display: none;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	 <style>
+		.form-scroll {
+		  max-height: 480px;
+		  overflow-y: scroll;
+		}
+	  </style>
 </head>
 
 
@@ -51,13 +102,12 @@
 					<li><a class="dropdown-item" href="#!">Logout</a></li>
 				</ul>
 			</li>
-				</ul>
-			</li>
+		</ul>
+		</li>
 		</ul>
 	</nav>
 	<div id="layoutSidenav">
 		<div id="layoutSidenav_nav">
-			<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
 			<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
@@ -72,7 +122,6 @@
 						<!--   <div class="sb-sidenav-menu-heading">Interface</div> -->
 						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
 							data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-							data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
 							<div class="sb-nav-link-icon">
 								<i class="fas fa-columns"></i>
 							</div> Theaters
@@ -82,16 +131,12 @@
 						</a>
 						<div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
 							data-bs-parent="#sidenavAccordion">
-						<div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
-							data-bs-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
 								<a class="nav-link" href="layout-static.html">Static
 									Navigation</a> <a class="nav-link" href="layout-sidenav-light.html">Light
 									Sidenav</a>
 							</nav>
 						</div>
-						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
-							aria-expanded="false" aria-controls="collapsePages">
 						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
 							aria-expanded="false" aria-controls="collapsePages">
 							<div class="sb-nav-link-icon">
@@ -227,12 +272,79 @@
 								<i class="fas fa-table me-1"></i> Movies Details
 							</div>
 							<div class="col-4 justify-content-end">
-								<button class="btn btn-block btn-sm btn-primary" type="button"
-									id="new_movie">
+								<button class="btn btn-block btn-sm btn-primary" type="button" id="new_movie" onclick="showPopupForm()">
 									<i class="fa fa-plus"></i> New Movie
 								</button>
 							</div>
 						</div>
+						<div class="overlay" id="overlay">
+							<div class="popup-form" id="popupForm">
+								<h2><br><br>Enter Movie Details</h2>
+								
+									<hr class="dropdown-divider" />
+								
+								<div class="form-scroll">
+								<form action="SaveDetails.jsp" method="post">
+									<div class="form-group">
+										<label for="movieTitle">Movie Title:</label>
+										<input type="text" name="movieTitle" id="movieTitle" required class="form-control" placeholder="Movie Title">
+										
+									</div>
+									<div class="form-group">
+										<label for="description">Description:</label>
+										<textarea id="w3review" name="description" id="description" required class="form-control" placeholder="Movie Description"></textarea>
+									</div>
+									<div class="container">
+										<div class="form-group row ">
+										  <label for="" class="control-label col-md-12 pl-0">Duration</label>
+										  <input type="number" name="duration_hour" required="" class="form-control col-sm-2 offset-md-1 ml-0"  max="12" min="0" placeholder="Hour">:
+										  <input type="number" name="duration_min" required="" class="form-control col-sm-2" max="59" min="0"  placeholder="Min">
+										</div>
+									</div>
+									<div class="container">
+										<div class="form-group row ">
+										  <label for="" class="control-label pl-0">Showing Schedule</label>
+										  <input name="date_showing" id="" type="date" class="form-control ml-0" >
+									</div>
+									<div class="form-group row ">
+										  <label for="" class="control-label">End Date</label>
+										  <input name="end_date" id="" type="date" class="form-control ml-0" >
+										</div>
+									  </div>
+
+									  <div class="form-group">
+										<img src="../assets/img/" alt="" id="cover_img" width="50" height="75">
+									  </div>
+									  <div class="form-group input-group">
+										<label for="" class="control-label">Cover Image</label>
+										<br>
+										<div class="input-group-prepend">
+										  <span class="input-group-text">Upload</span>
+										</div>
+										<div class="custom-file">
+										  <input type="file" name="cover" class="custom-file-input" id="cover-img" onchange="displayImg(this, $(this))">
+										  <label class="custom-file-label" for="cover-img">Choose file</label>
+										</div>
+									  </div>
+									
+									<button type="submit" class="btn btn-primary">Save</button>
+									<button type="button" class="btn btn-primary" onclick="closePopupForm()">Cancel</button>
+								</form>
+							</div>
+							</div>
+						</div>
+					
+						<script>
+							function showPopupForm() {
+								document.getElementById('overlay').style.display = 'flex';
+								document.getElementById('popupForm').style.display = 'block';
+							}
+					
+							function closePopupForm() {
+								document.getElementById('overlay').style.display = 'none';
+								document.getElementById('popupForm').style.display = 'none';
+							}
+						</script>
 
 						<div class="card-body">
 							<table id="customers">
@@ -473,8 +585,7 @@
 			</footer>
 		</div>
 	</div>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 		crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
@@ -483,37 +594,37 @@
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
 		crossorigin="anonymous"></script>
 	<script src="js/datatables-simple-demo.js"></script>
-	
-	
-	
-	
-	
-	<script>$('#new_movie').click(function(){
-		uni_modal('New Movie','ManageMovies.jsp');
-	})
-	$('.edit_movie').click(function(){
-		uni_modal('Edit Movie','manage_movie.php?id='+$(this).attr('data-id'));
-	})
-	$('.delete_movie').click(function(){
-		_conf('Are you sure to delete this data?','delete_movie' , [$(this).attr('data-id')])
-	})
 
-	function delete_movie($id=''){
-		start_load()
-		$.ajax({
-			url:'ajax.php?action=delete_movie',
-			method:'POST',
-			data:{id:$id},
-			success:function(resp){
-				if(resp ==1){
-					alert_toast("Data successfully deleted",'success');
-					setTimeout(function(){
-						location.reload()
-					},1500)
-				}
-			}
+
+
+
+
+	<script>$('#new_movie').click(function () {
+			uni_modal('New Movie', 'ManageMovies.jsp');
 		})
-	}</script>
+		$('.edit_movie').click(function () {
+			uni_modal('Edit Movie', 'manage_movie.php?id=' + $(this).attr('data-id'));
+		})
+		$('.delete_movie').click(function () {
+			_conf('Are you sure to delete this data?', 'delete_movie', [$(this).attr('data-id')])
+		})
+
+		function delete_movie($id = '') {
+			start_load()
+			$.ajax({
+				url: 'ajax.php?action=delete_movie',
+				method: 'POST',
+				data: { id: $id },
+				success: function (resp) {
+					if (resp == 1) {
+						alert_toast("Data successfully deleted", 'success');
+						setTimeout(function () {
+							location.reload()
+						}, 1500)
+					}
+				}
+			})
+		}</script>
 
 
 </body>
