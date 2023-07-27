@@ -1,0 +1,84 @@
+@charset "ISO-8859-1";
+
+html, body {
+	height: 100%;
+}
+
+html {
+	background-image: url("../image/backUI1.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: auto;
+	background-attachment: fixed;
+	margin: auto;
+}
+
+body {
+	vertical-align: middle;
+}
+.text-link{
+	text-decoration: none;
+	display: inline-block;
+	  width: 100%;
+	  height: auto;
+	  position: relative;
+		color: white;
+		margin: 1em 0;
+		text-align: center;
+		color: #FFF;
+		font-family: poppins, sans-serif;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 100%;
+		word-wrap: break-word;
+		text-align: center;
+}
+.movie-title {
+	position: relative;
+	color: white;
+	padding: 1em 0;
+	margin: 0;
+	text-align: center;
+	color: #FFF;
+	font-family: poppins, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 100%;
+	word-wrap: break-word;
+}
+
+.main-page-title {
+	font-family: poppins, sans-serif;
+	color: white;
+}
+
+.movie-container {
+	display: grid;
+	place-items: center;
+	/*   border: 1px solid black; */
+}
+
+.movie-row {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	gap: 15px;
+	flex-shrink: 0;
+}
+
+.movie {
+	
+	/*   	border: 1px solid black; */
+	padding: 5px 25px 50px 25px;
+	flex-shrink: 0;
+	max-width:250px;
+}
+
+.movie-image {
+	border-radius: 8px;
+	width: 250px;
+	height: 375px;
+}

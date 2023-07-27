@@ -1,29 +1,49 @@
-body{
+body {
     padding: 0;
-    margin:0;
+    margin: 0;
+    background-image: url("image/backUI1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
 }
 
 .container {
-    width: 100%;
-    margin: 0;
+    width: fit-content;
+    height: fit-content;
     border: 0px solid #ccc;
     display: flex;
 }
 
-.bekas {
-    background-color: black;
+.logo img {
+    width: 130px;
+    height: auto;
+}
+
+.left-half {
     display: flex;
-    width: 720px;
-    height: 1024px;
+    width: auto;
+    height: 100vh;
     padding: 40px 50px;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    flex-shrink: 0;
+
+}
+
+.right-half {
+    display: flex;
+    background-color: #fff;
+    width: auto;
+    height: 100vh;
+    padding: 0px 135px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    /* flex-shrink: 0; */
 }
 
 .text-welcome {
-    display: flex;
+    /* display: flex; */
     width: 596px;
     flex-direction: column;
     justify-content: center;
@@ -36,17 +56,14 @@ body{
     line-height: 120%;
 }
 
-.bekas2 {
-    display: flex;
-    width: 720px;
-    height: 1024px;
-    padding: 0px 135px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    flex-shrink: 0;
+
+.text-welcome p {
+    margin: 10px 0;
+    /* Adjust the margin as needed */
 }
+
+
+
 
 .card {
     background-color: #c22222;

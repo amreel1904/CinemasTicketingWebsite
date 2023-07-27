@@ -11,14 +11,15 @@
 
 <body>
 	<div class="container">
-		<div class="bekas">
-			<div class="logo"><img src="img/logo.png" alt=""></div>
+		<div class="left-half">
+			<div class="logo"><img src="img/logo_1.png" alt=""></div>
 			<div class="text-welcome">
-				<p>Welcome.
-					Begin your cinematic adventure now with our ticketing platform!</p>
+				<p>Welcome.</p>
+				<p>your cinematic adventure now with our ticketing platform!</p>
 			</div>
 		</div>
-		<div class="bekas2">
+
+		<div class="right-half">
 
 			<div class="login-title">
 				<h3>Create an account</h3>
