@@ -9,6 +9,10 @@
 </head>
 <body>
 	<div class="container" style="margin: 0 0 0 53%;">
+		<div >
+
+			
+		</div>
 		<div class="card" style="height: 100vh; border-radius: 0; width: 155%; padding: 15px;">
 			<div class="login-title">
 				<h3>Create an account</h3>
